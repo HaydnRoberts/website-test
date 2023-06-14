@@ -96,7 +96,7 @@ function HealthBar(progression, end, length) {
 
 function healthtest() {
   const resultEl = document.getElementById("result");
-  resultEl.innerHTML = HealthBar(40, 100, 40);
+  resultEl.innerHTML = HealthBar(60, 100, 40);
 }
 
 healthtest();
