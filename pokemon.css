@@ -1,0 +1,61 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 2px;
+    color: #666;
+    font-size: 30px;
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 2px;
+    color: #666;
+    font-size: 20px;
+  }
+  a{
+    text-align: center;
+  }
+  /* Set a pleasing background color */
+  body {
+    background-color: rgba(167, 159, 214, 0.733);
+    font-family: 'Roboto Flex', sans-serif;
+    padding-bottom: 200px;
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fcfb7e;
+    padding: 2px 0;
+    text-align: center;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Set the image alignment */
+  .left {
+    margin-right: 10px;
+  }
+  .right {
+    margin-left: 10px;
+  }
+  .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title id="title"></title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="pokemon.css" rel="stylesheet" type="text/css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,28 +16,49 @@
 </header>
 
 <body>
-  <h1 >Pokemon Engine</h1>
+  <h1 >Pokemon Engine WORK IN PROGRESS!</h1>
 
   <h2><a href="https://play.pokemonshowdown.com/">This is the website that inspired this project</a></h2>
 
-  <p>Enter a value(out of 100) for this health bar</p>
+  <form action="#" method="post" id="pokemonForm1">
+    <p>Choose a pokemon for this simulation:</p>
+    <input type="radio" name="pokemon1" value="Cyndaquil"> Cyndaquil
+    <input type="radio" name="pokemon1" value="Totodile"> Totodile
+    <input type="radio" name="pokemon1" value="Chikorita"> Chikorita
+    <button type="button" onclick="getSelectedPokemon1()">Submit</button>
+  </form> 
+  <p></p>
+  <select name="moves" style="font-size: 20px; color: crimson; background-color: rgb(108, 169, 194);">
+    <option value="move1" id="moveSelect1p1"></option>
+    <option value="move2" id="moveSelect2p1"></option>
+    <option value="move1" id="moveSelect3p1"></option>
+    <option value="move2" id="moveSelect4p1"></option>
+  </select>
+
+  <p>Enter a value for this health bar</p>
   <input type="number" id="input1" name="input1">
   <p id="result"></p>
-  <p>Enter a value(out of 100) for this health bar</p>
+
+  <form action="#" method="post" id="pokemonForm2">
+    <p>Choose a pokemon for this simulation:</p>
+    <input type="radio" name="pokemon1" value="Cyndaquil"> Cyndaquil
+    <input type="radio" name="pokemon1" value="Totodile"> Totodile
+    <input type="radio" name="pokemon1" value="Chikorita"> Chikorita
+    <button type="button" onclick="getSelectedPokemon2()">Submit</button>
+  </form>
+  <p></p>
+  <select name="moves" style="font-size: 20px; color: crimson; background-color: rgb(108, 169, 194);">
+    <option value="move1" id="moveSelect1p2"></option>
+    <option value="move2" id="moveSelect2p2"></option>
+    <option value="move1" id="moveSelect3p2"></option>
+    <option value="move2" id="moveSelect4p2"></option>
+  </select>
+
+  <p>Enter a value for this health bar</p>
   <input type="number" id="input2" name="input2">
   <p id="result2"></p>
   
-  <p>b</p>
-  <p>l</p>
-  <p>a</p>
-  <p>n</p>
-  <p>k</p>
-  <p>.</p>
-  <p>s</p>
-  <p>p</p>
-  <p>a</p>
-  <p>c</p>
-  <p>e</p>
+  <p></p>
   
   <p>this has been such a pain to try and make so i am postponing it</p>
   <p>scrap that it actually works omg look at that health bar :D</p>
@@ -80,19 +101,6 @@
   <a href="peeps.html" style="text-align: center; justify-content: center; align-items: center; margin-bottom: 2px; color: #d37a7a; font-size: 40px;">Go to the people page</a>
   <p></p>
   <a href="index.html" style="text-align: center; justify-content: center; align-items: center; margin-bottom: 2px; color: #d37a7a; font-size: 40px;">Go to the main page</a>
-
-  <div class="footer">
-    <div class="row">
-      <div class="column">
-        <img src="Jacques.PNG" width="60" height="100">
-        <p style="font-size: 30px">UNALIGNED FOOTER(now aligned)<p>
-        <button onclick="weeWoo()" style="font-size: 45px; color: cyan;">wee woo alert button</button>
-        <img src="Jacques.PNG" width="60" height="100">
-      </div>
-    </div>
-  </div>
-
-  <script src="Index.js"></script>
   <script src="pokemon engine.js"></script>
 </body>
 
